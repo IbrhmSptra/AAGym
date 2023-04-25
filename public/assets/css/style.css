@@ -1,0 +1,407 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    border:none;
+    color: white;
+    font-family: 'Poppins';
+}
+a{
+    text-decoration: none;
+}
+
+/* Navbar */
+
+/* Responsive Mobile */
+@media (max-width : 768px) {
+    .navbar{
+        background-color: #27231F;
+    }
+    .teks{
+        padding-top: 30px;
+        text-align: center;
+        height: 300px;
+        
+    }
+
+    .section {
+        height:1800px !important;
+        padding-top: 30px;
+    }
+
+    /* ===============================Latihan Page============================================ */
+    /* Jumbotron */
+    #gambar{
+        margin-top:0px;
+    }
+
+     /* Separator */
+     .separator{
+        height:461px;
+        background-image:url(../img/separatorbg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        margin:0px;
+        padding:0px;
+        align-items: center;
+    }
+    .separator p {
+        color: #FEDA15;
+        font-size:25px;
+        font-weight:bold;
+    }
+
+    /* =============================== Workout Days Page ================================== */
+    /* Header Card /page */
+    .headercard {
+        height: 460px;
+    }
+
+    /* ============================== Workout Page ======================================= */
+    #containerworkout{
+        padding-top: 150px;
+    }
+
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-size:20px;
+}
+
+.nav-link.active {
+    color: #FEDA15 !important;
+    border-bottom: #FEDA15 solid;
+}
+  
+
+.nav-link {
+    font-weight: bold;
+}
+
+
+/* Jumotron */
+.jumbotron{
+    background-image: url(../img/bg.png);
+    height:775px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron .container {
+    display: flex;
+    justify-content: center;
+    padding-top:50px;
+    flex-wrap: wrap;
+}
+
+.teks h1>span{
+    color: #FEDA15;
+}
+.teks h1{
+font-size:50px;
+font-weight: bold;
+}
+.gambar{
+    text-align: center;
+}
+
+.gambar img{
+    margin-top: 60px;
+    width:400px;
+    height:400px;
+}
+
+.teks *{
+    color: white;
+}
+
+
+.butonlogin button {
+    width: 100px;
+    color: black;
+    background-color: #FEDA15;
+    border:none;
+}
+
+/* section */
+.section {
+    background-image: url(../img/bgsc.png);
+    height:950px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#cardimg{
+    width:100px;
+    height:100px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#cardsc{
+    background-color: #DE0001 !important;
+    width:360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    height:280px;
+}
+
+#modelsc {
+    width:600px;
+    height:600px;
+    margin-right: auto;
+}
+
+#blacksc{
+    color: black;
+}
+#headsc {
+    color: #DE0001;
+    font-weight: bold;
+}
+#btnsc{
+    background-color: #DE0001 !important;
+    width:200px;
+    height:70px;
+}
+
+.footer {
+    background-color: #27231F;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+/*  ================================================ latihan page ========================================================== */
+/* jumbotron latihan */
+#latjumbotron {
+    height: 825px;
+}
+
+#gambar{
+    text-align: center;
+}
+
+#gambar img{
+    width:350px;
+    height:530px;
+}
+.btnstartlatihan button{
+    width: 200px;
+    color: black;
+    border:none;
+    background-color: #FEDA15;
+}
+
+ /* Section latihan*/
+ #latihan {
+    background-color:#27231F;
+}
+
+#cardlat {
+    border-radius: 10px;
+}
+
+
+/* ============================================== Workout Days Page ============================================================= */
+.headercard{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 460px;
+    background-image: url(../img/headerworkoutdays.png);
+    background-size: contain;
+}
+.headercard p {
+    color: #DE0001;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:96px;
+}
+
+/* Card workout */
+.workout {
+    margin-top: -15px;
+    padding-top: 40px;
+    background-color: white;
+    border-top-right-radius:15px !important;
+    border-top-left-radius: 15px !important;
+
+}
+
+.redtext{
+    color: #DE0001;
+}
+
+#layoutworkout{
+    margin-top:-25px;
+}
+
+#cardworkout{
+    background-color:black;
+}
+
+#cardworkout:hover{
+    background-color: #DE0001 !important; 
+    transition:0.5s ease-in-out !important;
+}
+
+/* =============================================== Workout Page ==================================================== */
+.frame {
+    background-image: url(../img/bgworkout.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+
+.yellowtext {
+    color: #FEDA15;
+}
+
+#gif {
+    width:300px;
+    height:180px;
+}
+
+#judulworkout{
+    font-size:40px;
+}
+#itensitas {
+    font-size: 20px;
+}
+#btndone {
+    background-color: #DE0001;
+    width: 100px;
+    height:30px;
+    color: white;
+    font-size: 10px;
+}
+
+
+/* RESPONSIVE DESKTOP */
+@media (min-width : 769px) {
+
+    /* Navbar */
+
+    .navbar-brand{
+        color: white;
+    }
+
+    .nav-link{
+        color: white;
+        margin-right:40px;
+    }
+
+    .nav-link:hover{
+        color:#FEDA15;
+        text-decoration: underline;
+    }
+
+    .nav-link:active{
+        color:#FEDA15 !important;
+        text-decoration: underline !important;
+    }
+
+    /* Jumbotron */
+
+    .jumbotron .containerjumbot {
+        display: flex;
+        padding-top:50px;
+        justify-content: center;
+    }
+
+    .jumbotron{
+        margin-top:-75px;
+        padding-top:20px;
+    }
+    
+
+    .gambar img{
+        width:620px;
+        height:620px;
+    }
+
+    .teks{
+        height: 400px;
+        align-self: center;
+        margin-left:120px;
+        padding-top: 50px;
+    }
+
+    .butonlogin{
+        display: flex;
+        
+    }
+
+    .butonlogin button {
+        height: 50px;
+        margin-right: 30px;
+        width: 150px;
+    }
+
+    /* Card */
+    #cardsc:hover{
+        transform: scale(110%);
+        transition: 0.3s ease-in-out;
+    }
+    
+
+    /* ================================================ LATIHAN PAGE ========================================================== */
+    /* Jumbotron latihan */
+    #gambar img{
+        text-align: start;
+        float: left;
+        width:620px;
+        height:670px;
+        padding-right: 150px;
+    }
+
+    #latjumbotron {
+        height:710px;
+    }
+
+    /* Separator */
+    .separator{
+        height:461px;
+        background-image:url(../img/separatorbg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .separator p {
+        color: #FEDA15;
+        font-size:96px;
+        font-weight:bold;
+    }
+
+    #cardlat:hover{
+        background-color: #FEDA15 !important; 
+        transition:0.5s ease-in-out !important;
+    }
+
+    /* ====================== Workout Page ==================================== */
+    #judulworkout{
+        font-size:65px;
+    }
+    #itensitas {
+        font-size: 40px;
+    }
+    #btndone {
+        background-color: #DE0001;
+        width: 200px;
+        height:70px;
+        color: white;
+        font-size: 20px;
+    }
+    #gif {
+        width:500px;
+        height:300px;
+    }
+}
