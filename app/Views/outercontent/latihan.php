@@ -53,146 +53,28 @@
 <!-- latihan section -->
 <section id="latihan">
     <div class="container pb-4">
-        <div class="row">
-            <div class="col">
-                <a href="workoutday.html">
-                    <div id="cardlat" class="card mt-5">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col">
-                                    <p class="fw-bolder text-dark fs-2 ps-4">Hari 1</p>
-                                </div>
-                                <div class="col">
-                                    <p class="fw-bolder text-dark fs-2 text-end pe-4">
-                                        900cal
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <a href="workoutday.html">
-                    <div id="cardlat" class="card mt-5">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col">
-                                    <p class="fw-bolder text-dark fs-2 ps-4">Hari 2</p>
-                                </div>
-                                <div class="col">
-                                    <p class="fw-bolder text-dark fs-2 text-end pe-4">
-                                        900cal
-                                    </p>
+        <?php foreach ($table as $col) : ?>
+            <div class="row">
+                <div class="col">
+                    <a href="/daysdetail/<?= $col['id'] ?>">
+                        <div id="cardlat" class="card mt-5">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="fw-bolder text-dark fs-2 ps-4"><?= $col['day'] ?></p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-bolder text-dark fs-2 text-end pe-4">
+                                            <?= $col['cal'] ?> cal
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <a href="workoutday.html">
-                    <div id="cardlat" class="card mt-5">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col">
-                                    <p class="fw-bolder text-dark fs-2 ps-4">Hari 3</p>
-                                </div>
-                                <div class="col">
-                                    <p class="fw-bolder text-dark fs-2 text-end pe-4">
-                                        900cal
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <a href="workoutday.html">
-                    <div id="cardlat" class="card mt-5">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col">
-                                    <p class="fw-bolder text-dark fs-2 ps-4">Hari 4</p>
-                                </div>
-                                <div class="col">
-                                    <p class="fw-bolder text-dark fs-2 text-end pe-4">
-                                        900cal
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <a href="workoutday.html">
-                    <div id="cardlat" class="card mt-5">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col">
-                                    <p class="fw-bolder text-dark fs-2 ps-4">Hari 5</p>
-                                </div>
-                                <div class="col">
-                                    <p class="fw-bolder text-dark fs-2 text-end pe-4">
-                                        900cal
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <a href="workoutday.html">
-                    <div id="cardlat" class="card mt-5">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col">
-                                    <p class="fw-bolder text-dark fs-2 ps-4">Hari 6</p>
-                                </div>
-                                <div class="col">
-                                    <p class="fw-bolder text-dark fs-2 text-end pe-4">
-                                        900cal
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <a href="workoutday.html">
-                    <div id="cardlat" class="card mt-5">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col">
-                                    <p class="fw-bolder text-dark fs-2 ps-4">Hari 7</p>
-                                </div>
-                                <div class="col">
-                                    <p class="fw-bolder text-dark fs-2 text-end pe-4">
-                                        900cal
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
+        <?php endforeach ?>
     </div>
 </section>
 <!-- end latihan -->
