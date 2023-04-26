@@ -32,6 +32,7 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/latihan', 'Latihan::index');
 $routes->get('/daysdetail/(:segment)', 'Latihan::daysdetail/$1');
+$routes->get('/workoutdetail/(:segment)', 'Latihan::workoutdetail/$1');
 
 /*
  * --------------------------------------------------------------------

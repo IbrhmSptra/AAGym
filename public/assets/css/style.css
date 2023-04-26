@@ -268,12 +268,20 @@ font-weight: bold;
 #gif {
     width:300px;
     height:180px;
+    border-radius:10px;
+    box-shadow: 10px 10px #585048;
 }
 
 #judulworkout{
     font-size:40px;
 }
 #itensitas {
+    font-size: 20px;
+}
+#countdown {
+    font-size: 20px;
+}
+#ready {
     font-size: 20px;
 }
 #btndone {
@@ -395,6 +403,12 @@ font-weight: bold;
     #itensitas {
         font-size: 40px;
     }
+    #countdown {
+        font-size: 40px;
+    }
+    #ready {
+        font-size: 40px;
+    }
     #btndone {
         background-color: #DE0001;
         width: 200px;
@@ -405,5 +419,7 @@ font-weight: bold;
     #gif {
         width:500px;
         height:300px;
+        border-radius:10px;
+        box-shadow: 10px 10px #585048;
     }
 }

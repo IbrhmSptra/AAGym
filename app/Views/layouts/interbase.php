@@ -17,6 +17,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <!-- my css -->
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Audio for workout view -->
+    <audio id="tick">
+        <source src="/assets/audio/tick.mp3" type="audio/mpeg">
+        <source src="/assets/audio/tick.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="readyaudio">
+        <source src="/assets/audio/ready.mp3" type="audio/mpeg">
+        <source src="/assets/audio/ready.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
 </head>
 
 <body>

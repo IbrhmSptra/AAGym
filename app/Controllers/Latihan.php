@@ -24,7 +24,7 @@ class Latihan extends BaseController
 
     public function daysdetail($id = null)
     {
-        //get table workout
+        //get table workout where foreign keys id_days
         $workoutmodel = new WorkoutModel();
         $workout = $workoutmodel->where('id_days', $id)->findAll();
 
@@ -37,11 +37,33 @@ class Latihan extends BaseController
             throw new \Exception("Data not found!");
         }
 
+        //send the data to view
         $data = [
             'title' => 'Workout Day ' . $id,
             'table' => $workout,
             'day' => $days
         ];
         return view('/intercontent/daysworkout', $data);
+    }
+
+    public function workoutdetail($id = null)
+    {
+
+        //get tables workout
+        $workoutmodel = new WorkoutModel();
+        $workout = $workoutmodel->find($id);
+
+        //cek if its null?? throw exception
+        if (!$workout) {
+            throw new \Exception("Data not found!");
+        }
+
+        //send the data to view
+        $data = [
+            'title' => $workout['gerakan'],
+            'table' => $workout,
+        ];
+
+        return view('/intercontent/workout', $data);
     }
 }
