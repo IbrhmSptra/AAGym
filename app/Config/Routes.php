@@ -33,6 +33,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/latihan', 'Latihan::index');
 $routes->get('/daysdetail/(:segment)', 'Latihan::daysdetail/$1');
 $routes->get('/workoutdetail/(:segment)', 'Latihan::workoutdetail/$1');
+$routes->get('/workoutdone/(:segment)', 'Latihan::workoutdone/$1');
 
 /*
  * --------------------------------------------------------------------

@@ -44,8 +44,8 @@
             <?php foreach ($table as $col) : ?>
                 <div class="row">
                     <div class="col">
-                        <a href="/workoutdetail/<?= $col['id'] ?>">
-                            <div id="cardworkout" class="card mt-5">
+                        <a href="/workoutdone/<?= $col['id'] ?>">
+                            <div id="cardworkout<?= in_array($col['id'], $done['id']) ? 'done' : '' ?>" class="card mt-5">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col">

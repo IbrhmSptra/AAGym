@@ -247,11 +247,15 @@ font-weight: bold;
 #cardworkout{
     background-color:black;
 }
+#cardworkoutdone{
+    background-color: gray;
+}
 
 #cardworkout:hover{
     background-color: #DE0001 !important; 
     transition:0.5s ease-in-out !important;
 }
+
 
 /* =============================================== Workout Page ==================================================== */
 .frame {
@@ -291,7 +295,6 @@ font-weight: bold;
     color: white;
     font-size: 10px;
 }
-
 
 /* RESPONSIVE DESKTOP */
 @media (min-width : 769px) {
