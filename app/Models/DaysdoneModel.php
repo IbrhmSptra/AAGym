@@ -4,17 +4,17 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class WorkoutdoneModel extends Model
+class DaysdoneModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'workoutdone';
+    protected $table            = 'daysdone';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id', 'id_days', 'gerakan'];
+    protected $allowedFields    = ['id', 'day'];
 
     // Dates
     protected $useTimestamps = false;

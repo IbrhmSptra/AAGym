@@ -207,6 +207,10 @@ font-weight: bold;
 #cardlat {
     border-radius: 10px;
 }
+#cardlatdone {
+    border-radius: 10px;
+    background-color: gray;
+}
 
 
 /* ============================================== Workout Days Page ============================================================= */

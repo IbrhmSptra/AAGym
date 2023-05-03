@@ -3,7 +3,9 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Database\Migrations\DaysDone;
 use App\Database\Migrations\Workoutdone;
+use App\Models\DaysdoneModel;
 use App\Models\DaysModel;
 use App\Models\WorkoutdoneModel;
 use App\Models\WorkoutModel;
@@ -14,11 +16,31 @@ class Latihan extends BaseController
 
     public function index()
     {
+        //get table daysdone ("visited")
+        $daysdonemodel = new DaysdoneModel();
+        $daysdone = $daysdonemodel->findAll();
+        //loop to get spesific array and make into new one
+        $daysdonearr = [
+            'id' => []
+        ];
+        foreach ($daysdone as $row) {
+            array_push($daysdonearr['id'], $row['id']);
+        }
+
+        //show modal reset syaratnya harus daysdone harus ada 7 hari
+        $isfinish = false;
+        if (count($daysdone) === 7) {
+            $isfinish = true;
+        }
+
+        //get table day
         $daysmodel = new DaysModel();
         $days = $daysmodel->findAll();
         $data = [
             'title' => 'AAGym | Latihan',
-            'table' => $days
+            'table' => $days,
+            'daysdone' => $daysdonearr,
+            'showmodal' => $isfinish
         ];
 
         return view('/outercontent/latihan', $data);
@@ -39,7 +61,7 @@ class Latihan extends BaseController
         $workoutmodel = new WorkoutModel();
         $workout = $workoutmodel->where('id_days', $id)->findAll();
 
-        //make model for workoutdone
+        //get all row table workout done
         $workoutdonemodel = new WorkoutdoneModel();
         $workoutdone = $workoutdonemodel->findAll();
 
@@ -80,7 +102,8 @@ class Latihan extends BaseController
     }
 
     //ini function untuk insert workout ke table workout done untuk fitur "Visited" berubah warna
-    public function workoutdone($id = null)
+    //disini juga ngelakuin buat cek apakah days yang di visited udh 8 workout jika iya insert days ke table daysdone untuk fitur visited
+    public function visited($id = null)
     {
         //get tables workout
         $workoutmodel = new WorkoutModel();
@@ -93,8 +116,7 @@ class Latihan extends BaseController
 
         //get tables workoutdone untuk tujuan insert
         $workoutdonemodel = new WorkoutdoneModel();
-        //dapetin row tapi idnya aja di table workoutdone yang idnya sesuai ama yang diklik
-        $workoutdone = $workoutdonemodel->where('id', $id)->find($id);
+
 
         //make row
         $data = [
@@ -102,10 +124,39 @@ class Latihan extends BaseController
             "id_days" => $workout['id_days'],
             "gerakan" => $workout['gerakan'],
         ];
+        //untuk menghindari duplikasi data ketika di insert maka ambil dlu di table workoutdone yang idnya sesuai 
+        //ama yg diklik lalu cek empty apa kaga klo empty berarti bisa di insert
+        $workoutdone = $workoutdonemodel->find($id);
         if (empty($workoutdone)) {
             //insert
             $workoutdonemodel->insert($data);
         }
+
+
+        //untuk insert daysdone syaratny workoutdone yg id_daysnya sama harus berjumlah 8 row
+        $workoutdone = $workoutdonemodel->where('id_days', $workout['id_days'])->findAll();
+        if (count($workoutdone) === 8) {
+            $daysdonemodel = new DaysdoneModel();
+            $daysmodel = new DaysModel();
+            //get dlu dari table days buat bahan isian
+            $days = $daysmodel->find($workout['id_days']);
+            $data = [
+                'id' => $days['id'],
+                'day' => $days['day']
+            ];
+            $daysdonemodel->insert($data);
+        }
         return redirect()->to('/workoutdetail/' . $id);
+    }
+
+    public function reset()
+    {
+        //get model for daysdone and workoutdone with function deleteall() in it
+        $daysdonemodel = new DaysdoneModel();
+        $workoutdonemodel = new WorkoutdoneModel();
+        $daysdonemodel->deleteAll();
+        $workoutdonemodel->deleteAll();
+
+        return redirect()->to('/latihan');
     }
 }
