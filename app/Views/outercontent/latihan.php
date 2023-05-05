@@ -12,8 +12,8 @@
             <div class="navbar-nav ms-auto">
                 <a class="nav-link" aria-current="page" href="/">Beranda</a>
                 <a class="nav-link active" href="/latihan">Latihan</a>
-                <a class="nav-link" href="#">BMI</a>
-                <a class="nav-link" href="#">Tentang</a>
+                <a class="nav-link" href="/bmi">BMI</a>
+                <a class="nav-link" href="/tentang">Tentang</a>
             </div>
         </div>
     </div>

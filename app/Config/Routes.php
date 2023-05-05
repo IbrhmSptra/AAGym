@@ -35,6 +35,9 @@ $routes->get('/daysdetail/(:segment)', 'Latihan::daysdetail/$1');
 $routes->get('/workoutdetail/(:segment)', 'Latihan::workoutdetail/$1');
 $routes->get('/visited/(:segment)', 'Latihan::visited/$1');
 $routes->get('/reset', 'Latihan::reset');
+$routes->get('/tentang', 'tentang::index');
+$routes->get('/bmi', 'bmi::index');
+$routes->post('/calculatebmi', 'bmi::calculate');
 
 /*
  * --------------------------------------------------------------------

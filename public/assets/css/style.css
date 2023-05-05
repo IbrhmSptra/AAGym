@@ -66,6 +66,48 @@ body{
         padding-top: 150px;
     }
 
+     /* ============================= BMI PAGE ============================================ */
+     .jumbotronbmi{
+        background-image: url(../img/bg.png);
+        height:1200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bgbmi{
+        width:400px;
+        height:355px;
+        background-color:#585048;
+        position: relative;
+    }
+    .result{
+        display:flex;
+        width:35px;
+        height:35px;
+        justify-content: center;
+        align-items:center;
+        padding-top:15px;
+        background-color:white;
+        border-radius: 50%;
+        border:1px solid black;
+        margin-top:-33px;
+        margin-left: 23%;
+        position: absolute;
+        z-index:2;
+    }
+    .resultcolor{
+        display: flex;
+        justify-content: center;
+        width:400px;
+        height:100px;
+        background-color: white;
+        position: absolute;
+        z-index:1;
+    }
+    .bgbmi > .row > .col-2 > img{
+        width:50px;
+        height:150px;
+    }
+
 }
 
 .navbar-brand{
@@ -298,6 +340,109 @@ font-weight: bold;
     height:30px;
     color: white;
     font-size: 10px;
+}
+
+/* ===================================================BMI PAGE======================================================= */
+.bmijumbotron {
+    margin-top:80px;
+}
+#berat {
+    width:320px;
+    height:100px;
+    font-size: 40px;
+    text-align: center;
+}
+#tinggi{
+    width:320px;
+    height:100px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.btnhitung{
+    background-color: #DE0001;
+    width: 150px;
+    height:75px;
+    color: white;
+    border-radius:15px;
+    font-size: 20px;
+}
+.bgbmi{
+    width:800px;
+    height:355px;
+    background-color:#585048;
+    position: relative;
+    border-top-right-radius:15px;
+    border-top-left-radius: 15px;
+}
+.result{
+    display:flex;
+    width:70px;
+    height:70px;
+    justify-content: center;
+    align-items:center;
+    padding-top:15px;
+    background-color:white;
+    border-radius: 50%;
+    border:1px solid black;
+    margin-top:-33px;
+    margin-left: 23%;
+    position: absolute;
+    z-index:2;
+}
+.resultcolor{
+    display: flex;
+    justify-content: center;
+    width:800px;
+    height:100px;
+    background-color: white;
+    position: absolute;
+    z-index:1;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius:15px;
+}
+.bgbmi > .row > .col-2 > img{
+    width:100px;
+    height:300px;
+}
+
+/* ===================================== TENTANG PAGE=========================================================== */
+.tentangjumbotron {
+    display: flex;
+    justify-content: center;
+    
+}
+.bgtentang{
+    width:1200px;
+    height:700px;
+    background-image:url(/assets/img/bgcardtentang.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.containercard{
+    padding:2%;
+}
+.containercard > .row{
+    padding-top: 11%;
+}
+.containercard > .row > .col-md-6 > img{
+    width:180px;
+    height:180px;
+}
+#social {
+    padding-left:20%;
+}
+#sociallink {
+    font-size:12px;
+    margin-top: 3px;
+}
+#sociallink:hover{
+    text-decoration: underline;
+}
+#logosocial{
+    color: white; 
+    height: 30px; 
+    width: 30px;
 }
 
 /* RESPONSIVE DESKTOP */
