@@ -10,10 +10,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-                <a class="nav-link active" aria-current="page" href="/">Beranda</a>
-                <a class="nav-link" href="/latihan">Latihan</a>
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link" href="/latihan">Workout</a>
                 <a class="nav-link" href="/bmi">BMI</a>
-                <a class="nav-link" href="/tentang">Tentang</a>
+                <a class="nav-link" href="/tentang">About</a>
             </div>
         </div>
     </div>
