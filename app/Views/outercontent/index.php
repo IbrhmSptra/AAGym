@@ -14,6 +14,9 @@
                 <a class="nav-link" href="/latihan">Workout</a>
                 <a class="nav-link" href="/bmi">BMI</a>
                 <a class="nav-link" href="/tentang">About</a>
+                <?php if (logged_in()) { ?>
+                    <a class="nav-link" href="/logout">Logout</a>
+                <?php } ?>
             </div>
         </div>
     </div>
@@ -31,10 +34,12 @@
                 AAGym bisa ngatur itu semua dengan plan 7 hari dan bermacam macam
                 variasi gerakan anda bisa bisa workout tanpa kebingungan
             </p>
-            <div class="butonlogin text-center">
-                <button type="button" class="btn btn-warning">Daftar</button>
-                <button type="button" class="btn btn-warning">Masuk</button>
-            </div>
+            <?php if (!logged_in()) { ?>
+                <div class="butonlogin text-center">
+                    <a href="/register"><button type="button" class="btn btn-warning">Daftar</button></a>
+                    <a href="/login"><button type="button" class="btn btn-warning">Masuk</button></a>
+                </div>
+            <?php } ?>
         </div>
         <div class="gambar">
             <img src="/assets/img/modelbg.png" alt="modelbg" />

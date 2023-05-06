@@ -15,6 +15,9 @@
                 <a class="nav-link" href="/latihan">Workout</a>
                 <a class="nav-link" href="/bmi">BMI</a>
                 <a class="nav-link active" href="/tentang">About</a>
+                <?php if (logged_in()) { ?>
+                    <a class="nav-link" href="/logout">Logout</a>
+                <?php } ?>
             </div>
         </div>
     </div>
