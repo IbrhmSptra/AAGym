@@ -13,6 +13,10 @@ body{
     background-color: #27231F ;
 }
 /* Navbar */
+#logonavbar{
+    color: white;
+    font-family:'facon','Poppins';
+}
 
 /* Responsive Mobile */
 @media (max-width : 768px) {
@@ -204,7 +208,9 @@ font-weight: bold;
 }
 #headsc {
     color: #DE0001;
+    font-family:'facon','Poppins';
     font-weight: bold;
+    font-size: 100px;
 }
 #btnsc{
     background-color: #DE0001 !important;
@@ -461,13 +467,8 @@ font-weight: bold;
 
     .nav-link:hover{
         color:#FEDA15;
-        text-decoration: underline;
     }
 
-    .nav-link:active{
-        color:#FEDA15 !important;
-        text-decoration: underline !important;
-    }
 
     /* Jumbotron */
 
@@ -507,9 +508,12 @@ font-weight: bold;
     }
 
     /* Card */
+    #cardsc{
+        transition: 0.3s ease-in-out;
+    }
     #cardsc:hover{
         transform: scale(110%);
-        transition: 0.3s ease-in-out;
+        
     }
     
 
