@@ -6,7 +6,7 @@
     <div id="containerworkout" class="container">
         <div class="row text-center">
             <div class="col">
-                <img class="mt-5" id="gif" src="/assets/img/<?= $table['gif'] ?>" alt="GIF WORKOUT" />
+                <img data-aos="zoom-in-up" data-aos-delay="100" class="mt-5" id="gif" src="/assets/img/<?= $table['gif'] ?>" alt="GIF WORKOUT" />
             </div>
         </div>
         <div class="row text-center">

@@ -68,21 +68,21 @@
             </div>
             <!-- END OF MODAL -->
 
-            <h1><span>7 Days</span> Workout</h1>
-            <p>
+            <h1 data-aos="fade-right"><span>7 Days</span> Workout</h1>
+            <p data-aos="fade-left">
                 AAGym akan membuatkan anda plan workout dalam 7 hari kedepan. Dalam
                 1 hari akan ada 9 gerakan dengan panduan dari AAgym. Anda sudah
                 menamatkan plan 7 days workout? Tenang tinggal mulai aja dari days 1
                 lagi. ehehehe mantap dahuy
             </p>
             <div class="btnstartlatihan text-start">
-                <a href="#latihan"><button type="button" class="btn btn-warning">
+                <a href="#latihan"><button type="button" class="btn btn-warning" data-aos="fade-up">
                         Get Started >>
                     </button></a>
             </div>
         </div>
         <div id="gambar">
-            <img src="/assets/img/modellat.png" alt="modelbg" />
+            <img data-aos="zoom-out" data-aos-delay="200" src="/assets/img/modellat.png" alt="modelbg" />
         </div>
     </div>
 </div>
@@ -90,7 +90,7 @@
 
 <!-- Separator -->
 <div class="separator mt-0">
-    <p>7 HARI LATIHAN</p>
+    <p data-aos="fade-up">7 HARI LATIHAN</p>
 </div>
 <!-- End Separator -->
 
@@ -98,7 +98,7 @@
 <section id="latihan">
     <div class="container pb-4">
         <?php foreach ($table as $col) : ?>
-            <div class="row">
+            <div data-aos="zoom-in-up" class="row">
                 <div class="col">
                     <a href="/daysdetail/<?= $col['id'] ?>">
                         <div id="cardlat<?= in_array($col['id'], $daysdone['id']) ? 'done' : '' ?>" class="card mt-5">

@@ -27,10 +27,10 @@
 <!-- Jumbtron -->
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <div class="tentangjumbotron">
+        <div data-aos="fade-up" data-aos-delay="200" class="tentangjumbotron">
             <div class="bgtentang">
                 <div class="containercard">
-                    <div class="row">
+                    <div data-aos="zoom-out" data-aos-delay="500" class="row">
                         <div class="col-md-6 text-center">
                             <img src="/assets/img/tim1.png" alt="" />
                         </div>
@@ -38,7 +38,7 @@
                             <img src="/assets/img/tim2.png" alt="" />
                         </div>
                     </div>
-                    <div class="row align-items-start text-center pt-3 pb-0">
+                    <div data-aos="fade-left" data-aos-delay="100" class="row align-items-start text-center pt-3 pb-0">
                         <div class="col-6">
                             <p class="fs-2 fw-bold">Ibrahim Saputra</p>
                         </div>
@@ -46,7 +46,7 @@
                             <p class="fs-2 fw-bold">Daffa Arya</p>
                         </div>
                     </div>
-                    <div class="row align-items-start text-center p-0">
+                    <div data-aos="fade-left" data-aos-delay="100" class="row align-items-start text-center p-0">
                         <div class="col-6">
                             <p class="fs-5">Full Stack</p>
                         </div>
@@ -54,7 +54,7 @@
                             <p class="fs-5">UI Designer</p>
                         </div>
                     </div>
-                    <div class="row pt-0 text-start">
+                    <div data-aos="fade-right" data-aos-delay="100" class="row pt-0 text-start">
                         <div class="col">
                             <div id="social" class="row">
                                 <div class="col-1">

@@ -4,12 +4,12 @@
 
 <!-- Header -->
 <div class="headercard">
-    <p><?= $day['day'] ?></p>
+    <p data-aos="zoom-out-up" data-aos-delay="200"><?= $day['day'] ?></p>
 </div>
 <!-- Akhir Dari Header -->
 
 <!-- Card Workout -->
-<div class="workout pb-3">
+<div data-aos="fade-up" class="workout pb-3">
     <div class="container">
         <div class="row">
             <div class="col text-start">
@@ -42,7 +42,7 @@
         </div>
         <div id="layoutworkout">
             <?php foreach ($table as $col) : ?>
-                <div class="row">
+                <div data-aos="zoom-in-up" class="row">
                     <div class="col">
                         <a href="/visited/<?= $col['id'] ?>">
                             <div id="cardworkout<?= in_array($col['id'], $done['id']) ? 'done' : '' ?>" class="card mt-5">

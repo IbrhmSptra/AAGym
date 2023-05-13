@@ -31,35 +31,35 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="row">
-                        <p class="fs-2 fw-bold yellowtext text-start">
+                        <p data-aos="fade-right" class="fs-2 fw-bold yellowtext text-start">
                             Apakah Badanmu Ideal?
                         </p>
                     </div>
                     <div class="row">
                         <form action="/calculatebmi" method="post">
 
-                            <div class="mb-3">
+                            <div data-aos="fade-left" class="mb-3">
                                 <label for="tinggi" class="form-label">Tinggi Badan (cm)</label>
                                 <input type="number" class="form-control <?= (isset($validation['haserrortinggi']) && $validation['haserrortinggi']) ? 'is-invalid' : '' ?>" id="tinggi" name="tinggi" placeholder="cm" value="<?= old('tinggi'); ?>" />
                                 <div class="invalid-feedback">
                                     <?= (isset($validation['geterrortinggi']) && $validation['geterrortinggi']) ? $validation['geterrortinggi'] : '' ?>
                                 </div>
                             </div>
-                            <div class="mb-3">
+                            <div data-aos="fade-right" class="mb-3">
                                 <label for="berat" class="form-label">Berat Badan (kg)</label>
                                 <input type="number" class="form-control <?= (isset($validation['haserrortinggi']) && $validation['haserrorberat']) ? 'is-invalid' : '' ?>" id="berat" name="berat" placeholder="kg" value="<?= old('berat'); ?>" />
                                 <div class="invalid-feedback">
                                     <?= (isset($validation['geterrorberat']) && $validation['geterrorberat']) ? $validation['geterrorberat'] : '' ?>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-danger btnhitung mt-3">
+                            <button data-aos="fade-left" type="submit" class="btn btn-danger btnhitung mt-3">
                                 Hitung
                             </button>
                         </form>
                     </div>
                 </div>
                 <div class="col-md-8">
-                    <div class="bgbmi">
+                    <div data-aos="fade-down" data-aos-delay="200" class="bgbmi">
                         <div class="row pt-3 justify-content-center align-content-center">
                             <div class="col-2">
                                 <img src="/assets/img/kurus.png" alt="" <?php if (isset($result['golongan']) && $result['golongan'] == 'kurus') { ?> style="border:2px dashed white;" <?php } ?> />
@@ -78,10 +78,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="result" <?= isset($result['style']) ? $result['style'] : "" ?>>
+                    <div data-aos="fade-up" class="result" <?= isset($result['style']) ? $result['style'] : "" ?>>
                         <p class="text-black" <?= isset($result['styletext']) ? $result['styletext'] : "" ?>><?= isset($result['bmi']) ? $result['bmi'] : "00.0" ?></p>
                     </div>
-                    <div class="resultcolor" <?= isset($result['style']) ? $result['style'] : "" ?>>
+                    <div data-aos="fade-up" data-aos-delay="200" class="resultcolor" <?= isset($result['style']) ? $result['style'] : "" ?>>
                         <p class="text-black align-self-center mt-4" <?= isset($result['styletext']) ? $result['styletext'] : "" ?>>
                             <?= isset($result['klasifikasi']) ? $result['klasifikasi'] : "Kira kira kamu termasuk yang mana ya...." ?>
                         </p>

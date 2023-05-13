@@ -27,22 +27,22 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="containerjumbot">
         <div class="teks">
-            <h1><span>#Stop Mager</span><br />Ayo Workout!!</h1>
-            <p>
+            <h1 data-aos="fade-right"><span>#Stop Mager</span><br />Ayo Workout!!</h1>
+            <p data-aos="fade-left">
                 Anda bingung gerakan workout itu ngapain aja? Mau workout tapi malas
                 bikin plan? Cape cape workout tapi badan masih gitu gitu aja? tenang
                 AAGym bisa ngatur itu semua dengan plan 7 hari dan bermacam macam
                 variasi gerakan anda bisa bisa workout tanpa kebingungan
             </p>
             <?php if (!logged_in()) { ?>
-                <div class="butonlogin text-center">
+                <div data-aos="fade-up" class="butonlogin text-center">
                     <a href="/register"><button type="button" class="btn btn-warning">Daftar</button></a>
                     <a href="/login"><button type="button" class="btn btn-warning">Masuk</button></a>
                 </div>
             <?php } ?>
         </div>
         <div class="gambar">
-            <img src="/assets/img/modelbg.png" alt="modelbg" />
+            <img data-aos="zoom-out" data-aos-delay="200" src="/assets/img/modelbg.png" alt="modelbg" />
         </div>
     </div>
 </div>
@@ -53,7 +53,7 @@
     <div class="container pt-md-5">
         <div class="row justify-content-center">
             <div class="col-md-4">
-                <div class="card text-bg-danger" id="cardsc">
+                <div data-aos="zoom-in-up" data-aos-duration="3000" data-aos-delay="300" class="card text-bg-danger" id="cardsc">
                     <img id="cardimg" src="/assets/img/beratbadan.png" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h1><b>Berat Badan</b></h1>
@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card text-bg-danger" id="cardsc">
+                <div data-aos="zoom-in-up" data-aos-duration="3000" data-aos-delay="300" class="card text-bg-danger" id="cardsc">
                     <img id="cardimg" src="/assets/img/kesehatan.png" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h1><b>Kesehatan</b></h1>
@@ -75,7 +75,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card text-bg-danger" id="cardsc">
+                <div data-aos="zoom-in-up" data-aos-duration="3000" data-aos-delay="1000" class="card text-bg-danger" id="cardsc">
                     <img id="cardimg" src="/assets/img/otot.png" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h1><b>Masa Otot</b></h1>
@@ -88,17 +88,17 @@
         </div>
         <div class="row">
             <div class="col-md-5">
-                <img id="modelsc" src="/assets/img/modelsc.png" alt="..." />
+                <img data-aos="zoom-out" data-aos-delay="500" id="modelsc" src="/assets/img/modelsc.png" alt="..." />
             </div>
             <div class="col align-self-center">
                 <div class="row">
-                    <h4 id="blacksc">Tentang</h4>
+                    <h4 data-aos="fade-up" data-aos-delay="100" id="blacksc">Tentang</h4>
                 </div>
                 <div class="row">
-                    <h1 id="headsc">AAGYM</h1>
+                    <h1 data-aos="fade-right" data-aos-delay="100" id="headsc">AAGYM</h1>
                 </div>
                 <div class="row">
-                    <p id="blacksc">
+                    <p data-aos="fade-left" data-aos-delay="100" id="blacksc">
                         AAgym Merupakan website fitness yang dapat membantu anda untuk
                         workout dan sekaligus dapat memantau BMI (Body Mass Index) agar
                         dapat mencapai body ideal yang anda inginkan. Yang keren adalah

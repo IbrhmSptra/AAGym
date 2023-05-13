@@ -22,8 +22,9 @@
     <!-- my css -->
     <link rel="stylesheet" href="/assets/css/style.css" />
 
-    <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -37,9 +38,17 @@
     <div class="footer">
         <p class="text-center">© Copyright 2023 Daffa Arya & Ibrahim Saputra</p>
     </div>
-
     <!-- footer end -->
 
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Js AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Initilized AOS -->
+    <script>
+        AOS.init();
+    </script>
     <!-- JS bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
