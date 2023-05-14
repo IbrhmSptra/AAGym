@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <link href="https://fonts.cdnfonts.com/css/facon" rel="stylesheet">
 
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- my css -->
     <link rel="stylesheet" href="/assets/css/style.css" />
@@ -41,8 +43,6 @@
     <!-- footer end -->
 
 
-    <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Js AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Initilized AOS -->
