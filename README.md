@@ -2,7 +2,7 @@
 # AAGYM (Web Application)
 
 AAgym merupakan website fitness yang dapat membantu anda untuk workout selama 7 hari yang telah dirancang sekaligus dapat menghitung BMI (Body Mass Index) agar dapat melihat seberapa idealnya badan user. User juga tidak perlu berlangganan untuk bisa menikmati fitur yang disediakan AAGym. Selama 7 hari user bisa menurunkan berat badan dan melatih otot asal dilakukan secara teratur dan menjaga pola makan.
-[![Outer-BMI.png](https://i.postimg.cc/W3BcLYq6/Outer-BMI.png)](https://postimg.cc/dkjxGBBL)
+
 
 
 ![Logo](https://i.postimg.cc/q7czvqKS/logo.png)
@@ -36,7 +36,8 @@ Tampilan tersebut adalah halaman dari navbar workout yang sekaligus menjadi kont
 Tampilan tersebut adalah halaman dari navbar workout ketika user sudah menyelesaikan plan workoutnya dari day 1 hingga day 7
 
 #### BMI
-[![Outer-BMI.png](https://i.postimg.cc/W3BcLYq6/Outer-BMI.png)](https://postimg.cc/dkjxGBBL)
+[![Outer-BMI.png](https://ibb.co/DK1z6bC)
+
 ![BMI](https://i.postimg.cc/FzbS0qjT/BMI-result.png)
 
 Tampilan tersebut adalah halaman dari navbar BMI yang sekaligus menjadi konten utama dari website AAGym yaitu menghitung BMI (Di perlukan login untuk akses halaman ini). Pada input halaman ini juga sudah dilengkapi validasi dan hasil result yang menarik
