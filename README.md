@@ -32,13 +32,13 @@ Tampilan tersebut adalah halaman yang akan pertama kali user lihat jika membuka 
 ![Workout](https://i.postimg.cc/y8kgvkBq/Outer-Workout.png)
 Tampilan tersebut adalah halaman dari navbar workout yang sekaligus menjadi konten utama dari website AAGym yaitu plan workout (Di perlukan login untuk akses halaman ini)
 
-![Workout](https://i.postimg.cc/Hx2XFRhF/Outer-Workout-FINISHED.png)
+![Workout Finsih](https://i.postimg.cc/Hx2XFRhF/Outer-Workout-FINISHED.png)
 Tampilan tersebut adalah halaman dari navbar workout ketika user sudah menyelesaikan plan workoutnya dari day 1 hingga day 7
 
 #### BMI
 ![BMI](https://i.postimg.cc/W3BcLYq6/Outer-BMI.png)
 
-![BMI](https://i.postimg.cc/FzbS0qjT/BMI-result.png)
+![BMI Result](https://i.postimg.cc/FzbS0qjT/BMI-result.png)
 Tampilan tersebut adalah halaman dari navbar BMI yang sekaligus menjadi konten utama dari website AAGym yaitu menghitung BMI (Di perlukan login untuk akses halaman ini). Pada input halaman ini juga sudah dilengkapi validasi dan hasil result yang menarik
 
 #### About
