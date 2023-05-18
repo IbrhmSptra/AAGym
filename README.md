@@ -36,7 +36,7 @@ Tampilan tersebut adalah halaman dari navbar workout yang sekaligus menjadi kont
 Tampilan tersebut adalah halaman dari navbar workout ketika user sudah menyelesaikan plan workoutnya dari day 1 hingga day 7
 
 #### BMI
-[![HgHNMhB.th.png](https://iili.io/HgHNMhB.th.png)](https://freeimage.host/i/HgHNMhB)
+[![HgHNMhB.th.png](https://iili.io/HgHNMhB.md.png)
 
 ![BMI](https://i.postimg.cc/FzbS0qjT/BMI-result.png)
 
