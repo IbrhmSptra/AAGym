@@ -1,62 +1,77 @@
-# CodeIgniter 4 Application Starter
 
-## What is CodeIgniter?
+# AAGYM (Web Application)
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+AAgym merupakan website fitness yang dapat membantu anda untuk workout selama 7 hari yang telah dirancang sekaligus dapat menghitung BMI (Body Mass Index) agar dapat melihat seberapa idealnya badan user. User juga tidak perlu berlangganan untuk bisa menikmati fitur yang disediakan AAGym. Selama 7 hari user bisa menurunkan berat badan dan melatih otot asal dilakukan secara teratur dan menjaga pola makan.
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+![Logo](https://i.postimg.cc/q7czvqKS/logo.png)
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
 
-## Installation & updates
+## Features
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+- 7 Days Workout Plan
+- BMI Calculator
+- Sound and Gif Interactive
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
 
-## Setup
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+## Screenshots
 
-## Important Change with index.php
+#### Login And Register
+![Login And Register](https://i.postimg.cc/pLpxgjpZ/Login.png)
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+![Login And Register](https://i.postimg.cc/d1W5Ph72/Register.png)
+Tampilan tersebut adalah dimana user akan Login dan register untuk menikmati fitur utama yaitu workout dan BMI calculator
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+#### Home
+![Home](https://i.postimg.cc/WzkYG230/Outer-Home.png)
+Tampilan tersebut adalah halaman yang akan pertama kali user lihat jika membuka website AAGym terdapat button login/register dan penjelasan tentang AAGym
 
-**Please** read the user guide for a better explanation of how CI4 works!
+#### Workout
+![Workout](https://i.postimg.cc/y8kgvkBq/Outer-Workout.png)
+Tampilan tersebut adalah halaman dari navbar workout yang sekaligus menjadi konten utama dari website AAGym yaitu plan workout (Di perlukan login untuk akses halaman ini)
 
-## Repository Management
+![Workout](https://i.postimg.cc/Hx2XFRhF/Outer-Workout-FINISHED.png)
+Tampilan tersebut adalah halaman dari navbar workout ketika user sudah menyelesaikan plan workoutnya dari day 1 hingga day 7
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+#### BMI
+![BMI](https://i.postimg.cc/W3BcLYq6/Outer-BMI.png)
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+![BMI](https://i.postimg.cc/FzbS0qjT/BMI-result.png)
+Tampilan tersebut adalah halaman dari navbar BMI yang sekaligus menjadi konten utama dari website AAGym yaitu menghitung BMI (Di perlukan login untuk akses halaman ini). Pada input halaman ini juga sudah dilengkapi validasi dan hasil result yang menarik
 
-## Server Requirements
+#### About
+![About](https://i.postimg.cc/855zPYC2/Outer-About.png)
+Tampilan tersebut adalah halaman dari navbar About yang menampilkan Social links dari author pembuat Web ini
 
-PHP version 7.4 or higher is required, with the following extensions installed:
+#### Workout List
+![Workout List](https://i.postimg.cc/T1v2q306/Inner-List-Workout.png)
+Tampilan tersebut adalah halaman ketika user menekan card Hari di navbar workout. Pada halaman ini menampilkan nama hari yang di klik, intruksi, jumlah latihan, kalori yang akan di keluarkan dan daftar workout yang harus di ikuti pada hari tersebut.
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+#### Workout
+![Workout](https://i.postimg.cc/PJV3nP7G/Inner-Workout-With-Time.png)
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+![Workout](https://i.postimg.cc/9M8trsYZ/Inner-Workout-With-Reps.png)
+Tampilan tersebut adalah halaman ketika user menekan card workout pada Workout List. Ada dua tipe workout yaitu dengan time countdown atau dengan reps
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+
+## Tech Stack
+
+**Client:** Bootstrap
+
+**Server:** CodeIgniter
+
+
+## Authors
+
+- Developer : [IbrhmSptra](https://www.github.com/IbrhmSptra)
+- Design : [@DaffaArya](https://www.instagram.com/daffa_rya/)
+
+
+## Documentation
+
+[Documentation](https://linktodocumentation)
+
+
+## 🛠 Skills
+PHP , Javascript, HTML, CSS
