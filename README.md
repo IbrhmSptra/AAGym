@@ -36,8 +36,9 @@ Tampilan tersebut adalah halaman dari navbar workout yang sekaligus menjadi kont
 Tampilan tersebut adalah halaman dari navbar workout ketika user sudah menyelesaikan plan workoutnya dari day 1 hingga day 7
 
 #### BMI
-
 ![BMI](https://i.postimg.cc/FzbS0qjT/BMI-result.png)
+
+[![Outer-BMI.png](https://i.postimg.cc/W3BcLYq6/Outer-BMI.png)](https://postimg.cc/dkjxGBBL)
 Tampilan tersebut adalah halaman dari navbar BMI yang sekaligus menjadi konten utama dari website AAGym yaitu menghitung BMI (Di perlukan login untuk akses halaman ini). Pada input halaman ini juga sudah dilengkapi validasi dan hasil result yang menarik
 
 #### About
