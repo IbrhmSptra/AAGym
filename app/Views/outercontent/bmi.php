@@ -52,7 +52,7 @@
                                     <?= (isset($validation['geterrorberat']) && $validation['geterrorberat']) ? $validation['geterrorberat'] : '' ?>
                                 </div>
                             </div>
-                            <button data-aos="fade-left" type="submit" class="btn btn-danger btnhitung mt-3">
+                            <button data-aos="fade-left" data-aos-once="true" type="submit" class="btn btn-danger btnhitung mt-3">
                                 Hitung
                             </button>
                         </form>

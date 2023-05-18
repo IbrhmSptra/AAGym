@@ -11,7 +11,6 @@ class Bmi extends BaseController
     {
         $session = \Config\Services::session();
         $data = [
-
             'result' => $session->getFlashdata('result'),
             'validation' => $session->getFlashdata('validation')
         ];
