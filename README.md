@@ -36,7 +36,7 @@ Tampilan tersebut adalah halaman dari navbar workout yang sekaligus menjadi kont
 Tampilan tersebut adalah halaman dari navbar workout ketika user sudah menyelesaikan plan workoutnya dari day 1 hingga day 7
 
 #### BMI
-[![Outer-BMI.png](https://ibb.co/DK1z6bC)
+[![Outer-BMI.png](https://drive.google.com/file/d/1q0Erqe6rdqrP5UIam2oqB5X32MTfNBR5/view?usp=sharing)
 
 ![BMI](https://i.postimg.cc/FzbS0qjT/BMI-result.png)
 
