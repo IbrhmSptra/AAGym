@@ -45,7 +45,7 @@
                 <div data-aos="zoom-in-up" class="row">
                     <div class="col">
                         <a href="/visited/<?= $col['id'] ?>">
-                            <div id="cardworkout<?= in_array($col['id'], $done['id']) ? 'done' : '' ?>" class="card mt-5">
+                            <div id="cardworkout<?= in_array($col['id'], $done['id_workout']) ? 'done' : '' ?>" class="card mt-5">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col">

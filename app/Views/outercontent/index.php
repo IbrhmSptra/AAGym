@@ -27,6 +27,9 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="containerjumbot">
         <div class="teks">
+            <?php if (logged_in()) { ?>
+                <h3 data-aos="fade-left">Hallo, <?= $username ?></h3>
+            <?php } ?>
             <h1 data-aos="fade-right"><span>#Stop Mager</span><br />Ayo Workout!!</h1>
             <p data-aos="fade-left">
                 Anda bingung gerakan workout itu ngapain aja? Mau workout tapi malas

@@ -101,17 +101,17 @@
             <div data-aos="zoom-in-up" class="row">
                 <div class="col">
                     <a href="/daysdetail/<?= $col['id'] ?>">
-                        <div id="cardlat<?= in_array($col['id'], $daysdone['id']) ? 'done' : '' ?>" class="card mt-5">
+                        <div id="cardlat<?= in_array($col['day'], $daysdone['hari']) ? 'done' : '' ?>" class="card mt-5">
                             <div class="card-body">
                                 <div class="row justify-content-between">
                                     <div class="col">
                                         <p class="fw-bolder text-dark fs-2 ps-4"><?= $col['day'] ?></p>
                                     </div>
-                                    <div class="col<?= in_array($col['id'], $daysdone['id']) ? '-1' : '' ?>">
-                                        <?php if (in_array($col['id'], $daysdone['id'])) { ?>
+                                    <div class="col<?= in_array($col['day'], $daysdone['hari']) ? '-1' : '' ?>">
+                                        <?php if (in_array($col['day'], $daysdone['hari'])) { ?>
                                             <img style="width:100px; height:70px;" class="text-end pe-4" src="/assets/img/checkicon.png" alt="">
                                         <?php } ?>
-                                        <p class="fw-bolder text-dark fs-2 text-end pe-4" style="<?= in_array($col['id'], $daysdone['id']) ? 'display:none;' : '' ?>">
+                                        <p class="fw-bolder text-dark fs-2 text-end pe-4" style="<?= in_array($col['day'], $daysdone['hari']) ? 'display:none;' : '' ?>">
                                             <?= $col['cal'] ?> cal
                                         </p>
                                     </div>

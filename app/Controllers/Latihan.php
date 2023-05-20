@@ -18,13 +18,15 @@ class Latihan extends BaseController
     {
         //get table daysdone ("visited")
         $daysdonemodel = new DaysdoneModel();
-        $daysdone = $daysdonemodel->findAll();
+        $daysdone = $daysdonemodel
+            ->where('id_user', user_id())
+            ->findAll();
         //loop to get spesific array and make into new one
         $daysdonearr = [
-            'id' => []
+            'hari' => []
         ];
         foreach ($daysdone as $row) {
-            array_push($daysdonearr['id'], $row['id']);
+            array_push($daysdonearr['hari'], $row['day']);
         }
 
         //show modal reset syaratnya harus daysdone harus ada 7 hari
@@ -48,7 +50,7 @@ class Latihan extends BaseController
 
     public function daysdetail($id = null)
     {
-        //get table days for cal
+        //get table days for just echo "call"
         $daysmodel = new DaysModel();
         $days = $daysmodel->find($id);
 
@@ -61,14 +63,16 @@ class Latihan extends BaseController
         $workoutmodel = new WorkoutModel();
         $workout = $workoutmodel->where('id_days', $id)->findAll();
 
-        //get all row table workout done
+        //get all row table workout done (Visited)
         $workoutdonemodel = new WorkoutdoneModel();
-        $workoutdone = $workoutdonemodel->findAll();
+        $workoutdone = $workoutdonemodel
+            ->where('id_user', user_id())
+            ->findAll();
 
         //loop to get spesific row from workout done
-        $iddone = ['id' => []];
+        $id_woDone = ['id_workout' => []];
         foreach ($workoutdone as $row) {
-            array_push($iddone['id'], $row['id']);
+            array_push($id_woDone['id_workout'], $row['id_workout']);
         }
 
         //send the data to view
@@ -76,7 +80,7 @@ class Latihan extends BaseController
             'title' => 'Workout Day ' . $id,
             'table' => $workout,
             'day' => $days,
-            'done' => $iddone,
+            'done' => $id_woDone,
         ];
         return view('/intercontent/daysworkout', $data);
     }
@@ -120,13 +124,17 @@ class Latihan extends BaseController
 
         //make row
         $data = [
-            "id" => $workout['id'],
             "id_days" => $workout['id_days'],
+            "id_workout" => $id,
+            "id_user" => user_id(),
             "gerakan" => $workout['gerakan'],
         ];
         //untuk menghindari duplikasi data ketika di insert maka ambil dlu di table workoutdone yang idnya sesuai 
         //ama yg diklik lalu cek empty apa kaga klo empty berarti bisa di insert
-        $workoutdone = $workoutdonemodel->find($id);
+        $workoutdone = $workoutdonemodel
+            ->where('id_user', user_id())
+            ->where('id_workout', $id)
+            ->first();
         if (empty($workoutdone)) {
             //insert
             $workoutdonemodel->insert($data);
@@ -134,14 +142,17 @@ class Latihan extends BaseController
 
 
         //untuk insert daysdone syaratny workoutdone yg id_daysnya sama harus berjumlah 8 row
-        $workoutdone = $workoutdonemodel->where('id_days', $workout['id_days'])->findAll();
+        $workoutdone = $workoutdonemodel
+            ->where('id_days', $workout['id_days'])
+            ->where('id_user', user_id())
+            ->findAll();
         if (count($workoutdone) === 8) {
             $daysdonemodel = new DaysdoneModel();
             $daysmodel = new DaysModel();
             //get dlu dari table days buat bahan isian
             $days = $daysmodel->find($workout['id_days']);
             $data = [
-                'id' => $days['id'],
+                "id_user" => user_id(),
                 'day' => $days['day']
             ];
             $daysdonemodel->insert($data);

@@ -12,6 +12,11 @@ class DaysDone extends Migration
             "id" => [
                 'type' => 'INT',
                 'unsigned' => true,
+                "auto_increment" => true,
+            ],
+            "id_user" => [
+                'type' => 'INT',
+                'unsigned' => true,
             ],
             "day" => [
                 'type' => 'VARCHAR',

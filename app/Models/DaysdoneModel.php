@@ -14,7 +14,7 @@ class DaysdoneModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id', 'day'];
+    protected $allowedFields    = ['id', 'id_user', 'day'];
 
     // Dates
     protected $useTimestamps = false;
@@ -42,6 +42,8 @@ class DaysdoneModel extends Model
 
     public function deleteAll()
     {
-        $this->db->table($this->table)->truncate(); // Delete all rows from the table
+        $this->db->table($this->table)
+            ->where('id_user', user_id())
+            ->delete(); // Delete all rows from the table where id user is curently logged in
     }
 }
