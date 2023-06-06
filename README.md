@@ -47,7 +47,7 @@ Tampilan tersebut adalah halaman ketika user menekan card Hari di navbar workout
 #### Workout
 ![Workout](https://i.postimg.cc/PJV3nP7G/Inner-Workout-With-Time.png)
 
-![Workout](https://i.postimg.cc/9M8trsYZ/Inner-Workout-With-Reps.png)
+![Workout](https://i.postimg.cc/kMv1y21Q/Inner-Workout-With-Reps.png)
 Tampilan tersebut adalah halaman ketika user menekan card workout pada Workout List. Ada dua tipe workout yaitu dengan time countdown atau dengan reps
 
 ## Tech Stack
